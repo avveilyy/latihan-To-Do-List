@@ -1,4 +1,3 @@
-Sure, here’s the same README with no emojis and in Indonesian:
 
 To-Do List
 
