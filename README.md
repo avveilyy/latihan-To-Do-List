@@ -68,6 +68,9 @@ Fitur search digunakan untuk mencari tugas berdasarkan kata kunci. Jika tidak ad
 3. Buka file index.html menggunakan browser.
 4. Project siap digunakan.
 
-7.Tujuan Project
+7. Live Demo
+https://avveilyy.github.io/latihan-To-Do-List/
+
+8.Tujuan Project
 
 Project ini dibuat untuk mempraktikkan penggunaan HTML, CSS, dan JavaScript dalam membuat website yang interaktif dan sederhana.
