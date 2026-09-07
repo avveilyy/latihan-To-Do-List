@@ -67,9 +67,11 @@ Fitur search digunakan untuk mencari tugas berdasarkan kata kunci. Jika tidak ad
 2. Buka folder project.
 3. Buka file index.html menggunakan browser.
 4. Project siap digunakan.
+   
 
 7. Live Demo
 https://avveilyy.github.io/latihan-To-Do-List/
+
 
 8.Tujuan Project
 
