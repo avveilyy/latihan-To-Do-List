@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contoh Event Form</title>
+
+    <script>
+
+        function validateForm(event) {
+            event.preventDefault(); //mencegah form dari pengiriman default
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            if (name === "" || email === "") {
+                alert("Nama dan email harus diisi!");
+            } else {
+                // logika untuk mengirim form bisa ditambahkan di sini
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("myForm");
+            form.addEventListener("submit", validateForm);
+        })
+
+        </script>
+    </head>
+    <body>
+
+        <form id="myForm">
+        <label for="name"></label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html> 

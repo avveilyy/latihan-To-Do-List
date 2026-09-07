@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome untuk icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div>
+                <h1>To-Do List</h1>
+                <!-- <p id="date">Tuesday, 1 September 2026</p> -->
+            </div>
+
+            <div class="header-right">
+                <i class="fa-solid fa-star"></i>
+
+                <span class="task-count">
+                    <span id="taskCount">0</span> Tugas Tersisa
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- GARIS -->
+        <!-- <div class="line"></div> -->
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="searchInput" placeholder="Cari tugas...">
+
+        </div>
+
+
+        <!-- INPUT TUGAS -->
+        <div class="add-task">
+
+            <i class="fa-solid fa-plus"></i>
+
+            <input type="text" id="taskInput" placeholder="Ketik tugas baru lalu tekan Enter...">
+
+            <select id="priority">
+                <option value="sedang">Sedang</option>
+                <option value="tinggi">Tinggi</option>
+                <option value="rendah">Rendah</option>
+            </select>
+
+            <button id="addButton">
+                Add +
+            </button>
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="filter">
+
+            <button class="filter-btn active" data-filter="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Aktif
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Selesai
+            </button>
+
+        </div>
+
+
+        <!-- DAFTAR TUGAS -->
+        <div class="task-list">
+
+            <ul id="taskList">
+                <!-- Tugas akan ditambahkan menggunakan JavaScript -->
+            </ul>
+
+        </div>
+
+
+        <!-- EMPTY STATE -->
+        <div class="task-list">
+            <ul id="taskList">
+                <!-- Tugas akan muncul di sini -->
+            </ul>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <i class="fa-solid fa-mug-hot"></i>
+
+            <h3>Belum ada tugas</h3>
+
+            <p>Tambahkan tugas baru untuk memulai.</p>
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

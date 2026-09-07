@@ -1,0 +1,130 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffd5e9;
+    color: #dd196b;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 850px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(207, 29, 94, 0.12);
+}
+
+/* ===== JUDUL ===== */
+#judul-dashboard {
+    font-size: 32px;
+    font-weight: bold;
+    color: #cf1d52;
+    margin-bottom: 8px;
+}
+
+.container > p {
+    color: #996f7b;
+    margin-bottom: 25px;
+}
+
+/* ===== KARTU NOTIFIKASI ===== */
+.kartu-notifikasi {
+    background-color: #FDF9F2;
+    border-left: 5px solid #ab1554;
+
+    padding: 15px 18px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    color: #63263d;
+
+    transition: 0.25s ease;
+}
+
+.kartu-notifikasi:hover {
+    transform: translateX(5px);
+    background-color: #ffeef5;
+}
+
+/* ===== GARIS ===== */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #dbe4f7;
+    margin: 30px 0;
+}
+
+/* ===== PANEL ===== */
+.panel-control {
+    background-color: #FDF9F2;
+    border: 2px solid #e5eaf5;
+
+    padding: 25px;
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: 0.3s ease;
+}
+
+/* ===== BUTTON ===== */
+.tombol-aksi {
+    border: none;
+    background-color: #cf1d52;
+    color: #ffffff;
+
+    padding: 14px 18px;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+/* Hover */
+.tombol-aksi:hover {
+    background-color: #8e1338;
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(29, 86, 207, 0.2);
+}
+
+/* Saat ditekan */
+.tombol-aksi:active {
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    #judul-dashboard {
+        font-size: 26px;
+    }
+
+    .tombol-aksi {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contoh Event Keyboard</title>
+
+</head>
+<body>
+    <input type="text" id="myInput"
+    placeholder="Teken tombol apa saja ...">
+
+    <script>
+        const input = document.getElementById("myInput");
+
+        // menambahkan event listener untuk event "keydown"
+        input.addEventListener("keydown", function (event){
+            console.log("tombol ditekan: " + event.key);
+        });
+
+        //menambahkan event listener untuk event "keyup"
+        input.addEventListener("keyup", function() {
+            console.log("tombol ditekan: " + event.key);
+        });
+
+    </script>
+</body>
+</html>

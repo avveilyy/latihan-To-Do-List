@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- elemen untuk diuji dengan getElementByID -->
+         <div id="judul-dashboard">Dashboard User</div>
+         <p class="fw-semibold">⤷ ゛Welcome to Control Center ˎˊ˗</p>
+
+         <!-- elemen untuk diuji dengan getElemenByClassName -->
+        <div class="kartu-notifikasi">Notifikasi 1: Pesan baru di terima</div>
+        <div class="kartu-notifikasi">Notifikasi 2: Sistem diperbarui</div>
+        <div class="kartu-notifikasi">Notifikasi 3: Backup Selesai.</div>
+
+        <hr>
+
+        <p>Gunakan panel di bawah ini untuk mengubah tampilan dashboard</p>
+
+        <!-- elemen untuk diuji dengan querySelector -->
+        <div class="panel-control">
+            <!-- elemen untuk diuji dengan querySelectorAll -->
+        <button class="tombol-aksi" id="btn-ubah-judul">1. Ubah Judul (ID)</button>
+        <button class="tombol-aksi" id="btn-ubah-kartu">2. Ubah Kartu (Class)</button>
+        <button class="tombol-aksi" id="btn-ubah-teks">3. Ubah Teks (Tag)</button>
+        <button class="tombol-aksi" id="btn-ubah-panel">4. Sorot panel (Query Selector)</button>
+        <button class="tombol-aksi" id="btn-ubah-judul">1. Ubah Gaya Tombol (Query Selector All)</button>
+        </div>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>

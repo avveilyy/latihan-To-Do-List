@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contoh Window Event</title>
+    <script>
+        //event 'load' terjadi ketika seluruh halaman telah dimuat
+        window.addEventListener("load", function () {
+            console.log("Halaman telah dimuat sepenuhnya.");
+        });
+
+        //event 'unload' terjadi ketika halaman akan ditutup atau diganti 
+        window.addEventListener("unload", function () {
+            console.log("Halaman akan di tutup.");
+        });
+
+        //event 'resize' terjadi ketika ukuran jendela diubah 
+        window.addEventListener("resize", function () {
+            console.log("ukuran jendela telah diubah.");
+        });
+
+        //event 'scroll' terjadi ketika pengguna menggulir halaman
+        window.addEventListener("scroll", function () {
+            console.log("Halaman sedang digulir.");
+        });
+
+        //event 'beforeunload' terjadi sebelum halaman akan ditutup
+        window.addEventListener("beforeunload", function (){
+            event.preventDefault(); //dibutuhkan untuk berberapa browser
+            event.returnValue = ''; //standar modern untuk menampilkan dialog konfirmasi
+            console.log("pengguna mencoba meninggalkan halaman.");
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Contoh Window Event</h1>
+    <p>Ubah ukuran jendela atau gulir halaman untuk melihat event di konsol</p>
+</body>
+</html>

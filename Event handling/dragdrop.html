@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Contoh Drag & Drop event</title>
+    <style>
+        #drag1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            cursor: move;
+        }
+
+        #dropzone {
+            width:200px;
+            height:200px;
+            border:2px dashed #000;
+            margin:20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="drag1" draggable="true"> (try) Drag Me </div>
+    <div> (try) Drop here </div>
+
+    <script>
+        const dragItem = document.getElementById("drag1");
+        const dropzone = document.getElementById("dropzone");
+        //event saat elemen mulai di seret
+        dragItem.addEventListener("dragstart", function (){
+            event.dataTransfer.setData("text/plain", event.target.id);
+            console.log("Elemen mulai di seret.");
+        });
+
+        //event saat elemen berada di atas drop zone 
+        dropZone.addEventListener("dragover", function (event){
+            // event.preventDefault(); mencegah aksi default untuk memungkinkan drop 
+            console.log("elemen berada di atas drop zone.");
+        });
+
+        //event saat elemen dilepaskan di drop zone 
+        dropZone.addEventListener("drop", function (event){
+           event.preventDefault ();
+           const data = event.dataTransfer.getData("Text/plain");
+           const draggedElement = document.getElementById(data);
+           dropzone.appendChild (draggedElement);
+           console.log("Elemen dilepaskan di drop zone.");
+        });
+
+        //event saat elemen yang diseret meninggalkan drop zone 
+        dropZone.addEventListener("dragleave", function (){
+            console.log("elemen meninggalkan drop zone.");
+        });
+
+        // event saat elemen selesai di seret 
+        dragItem.addEventListener("dragend", function (){
+            console.log ("elemen selesai di drag");
+        });
+        
+    </script>
+</body>
+</html>
