@@ -1,9 +1,7 @@
 
 To-Do List
 
-A simple To-Do List website for managing and organizing daily tasks.
-
-Fitur
+1.Fitur
 
 * Menambahkan tugas baru
 * Menambahkan tugas dengan menekan tombol Enter
@@ -18,14 +16,14 @@ Fitur
 * Menampilkan empty state ketika tidak ada tugas
 * Responsive untuk ukuran layar yang lebih kecil
 
-Teknologi
+2.Teknologi
 
 * HTML — Struktur website
 * CSS — Styling dan responsive layout
 * JavaScript — Mengatur fitur dan interaksi website
 * Font Awesome — Icon pada interface
 
-Desain
+3.Desain
 
 Website menggunakan desain yang sederhana dan clean dengan:
 
@@ -37,7 +35,7 @@ Website menggunakan desain yang sederhana dan clean dengan:
 
 Container utama menggunakan lebar 560px dengan background putih, rounded corners, dan shadow.
 
-Struktur Project
+4.Struktur Project
 
 To-Do-List/
 │
@@ -45,7 +43,7 @@ To-Do-List/
 ├── style.css
 └── script.js
 
-Cara Kerja
+5.Cara Kerja
 
 Menambahkan Tugas
 
@@ -63,13 +61,13 @@ Mencari Tugas
 
 Fitur search digunakan untuk mencari tugas berdasarkan kata kunci. Jika tidak ada tugas yang sesuai, akan muncul pesan bahwa tugas tidak ditemukan.
 
-Cara Menjalankan
+6.Cara Menjalankan
 
 1. Download atau clone repository.
 2. Buka folder project.
 3. Buka file index.html menggunakan browser.
 4. Project siap digunakan.
 
-Tujuan Project
+7.Tujuan Project
 
 Project ini dibuat untuk mempraktikkan penggunaan HTML, CSS, dan JavaScript dalam membuat website yang interaktif dan sederhana.
